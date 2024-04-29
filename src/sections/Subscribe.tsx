@@ -21,7 +21,8 @@ const Subscribe: React.FC = () => {
       </motion.h3>
 
       <motion.div
-        className="lg:max-w-[40%] w-full lg:w-auto flex flex-col lg:flex-row items-center gap-5 p-2.5 sm:border sm:border-coral-red rounded-full"
+        className="lg:max-w-[40%] w-full lg:w-auto flex flex-col lg:flex-row items-center 
+        gap-5 p-2.5 sm:border sm:border-coral-red rounded-full"
         variants={slideUp2}
         key="sub2"
       >
