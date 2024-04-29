@@ -73,9 +73,10 @@ const Hero: React.FC = () => {
 
       <div
         className="relative flex-1 flex justify-center items-center xl:min-h-screen 
-      max-xl:py-40 bg-dark"
+      max-xl:py-40 gradient-bg"
       >
         <motion.div
+          
           variants={slideInFromRight}
           initial="hidden"
           whileInView="visible"
@@ -86,7 +87,7 @@ const Hero: React.FC = () => {
             alt="Shoe Collection"
             width={610}
             height={500}
-            className="object-contain relative  bg-dark"
+            className="object-contain relative"
           />
         </motion.div>
         <motion.div
