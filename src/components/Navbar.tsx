@@ -2,7 +2,7 @@ import headerLogo from '../assets/images/header-logo.svg';
 import hamburger from '../assets/icons/hamburger.svg';
 import { navLinks } from '../constants/index';
 import { motion } from 'framer-motion';
-import { fadeIn, slideDown2, staggerDown } from '../constants/animations';
+import { slideDown2, staggerDown } from '../constants/animations';
 
 const Navbar: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
       <nav className="flex justify-between items-center max-container">
         <motion.a
           href="#"
-          variants={fadeIn}
+          variants={slideDown2}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}

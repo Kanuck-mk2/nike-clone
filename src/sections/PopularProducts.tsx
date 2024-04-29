@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
 import PopularProductsCard from '../components/PopularProductsCard';
 import { products } from '../constants';
-import { fadeIn, slideUp2, staggerUp } from '../constants/animations';
+import { slideUp2, staggerUp } from '../constants/animations';
 
 const PopularProducts: React.FC = () => {
   return (
     <section id="products" className=" bg-dark max-container max-sm:mt-12">
       <motion.div
-        variants={fadeIn}
+        variants={slideUp2}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

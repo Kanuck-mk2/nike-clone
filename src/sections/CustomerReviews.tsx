@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
 import ReviewCard from '../components/ReviewCard';
 import { reviews } from '../constants';
-import { fadeIn, popUp, staggerPop } from '../constants/animations';
+import { popUp,  slideUp2, staggerPop } from '../constants/animations';
 
 const CustomerReviews: React.FC = () => {
   return (
-    <section className="max-container gradient-bg" id="reviews" >
+    <section className="max-container gradient-bg" id="reviews">
       <motion.div
-        variants={fadeIn}
+        variants={slideUp2}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
