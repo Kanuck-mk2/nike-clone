@@ -41,8 +41,8 @@ export const slideUp: Variants = {
 };
 
 export const slideDown: Variants = {
-  hidden: { y: -300, opacity: 0 },
-  visible: { y: 0, opacity: 1, transition: { duration: 0.5, delay: 0.5 } },
+  hidden: { y: -100, opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { duration: 0.8 } },
 };
 
 // Child Animations
