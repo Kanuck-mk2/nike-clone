@@ -10,6 +10,7 @@ import {
   fadeIn,
   popUp,
   slideInFromRight,
+  slideUp2,
   staggerPop,
 } from '../constants/animations';
 
@@ -58,7 +59,13 @@ const Hero: React.FC = () => {
 
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-5  ">
           {statistics.map((stat) => (
-            <div key={stat.label}>
+            <motion.div
+              key={stat.label}
+              variants={slideUp2}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
               <p className="text-3xl font-palanquin font-bold text-white">
                 {stat.label}
               </p>
@@ -66,7 +73,7 @@ const Hero: React.FC = () => {
                 {' '}
                 {stat.value}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -76,7 +83,6 @@ const Hero: React.FC = () => {
       max-xl:py-40 gradient-bg"
       >
         <motion.div
-          
           variants={slideInFromRight}
           initial="hidden"
           whileInView="visible"

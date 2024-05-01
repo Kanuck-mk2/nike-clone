@@ -57,7 +57,10 @@
   }
 
   .gradient-bg {
-    background-image:  radial-gradient(ellipse closest-side, hsl(5, 100%, 66%), hsl(0, 0%, 0%));
+    background-image: radial-gradient(
+      ellipse closest-side,
+      hsl(5, 100%, 66%),
+      hsl(0, 0%, 0%)
+    );
   }
-  
 }
