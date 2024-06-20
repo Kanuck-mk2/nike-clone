@@ -7,7 +7,7 @@ export const fadeIn: Variants = {
 };
 
 export const slideInFromRight: Variants = {
-  hidden: { x: 200, opacity: 0, scale: 0 },
+  hidden: { x: 40, opacity: 0, scale: 0 },
   visible: {
     x: 0,
     opacity: 1,
@@ -26,7 +26,7 @@ export const popIn: Variants = {
 };
 
 export const buttonLeft: Variants = {
-  hidden: { x: -200, opacity: 0 },
+  hidden: { x: -40, opacity: 0 },
   visible: { x: 0, opacity: 1, transition: { duration: 2, type: 'spring' } },
 };
 
@@ -41,7 +41,7 @@ export const slideUp: Variants = {
 };
 
 export const slideDown: Variants = {
-  hidden: { y: -100, opacity: 0 },
+  hidden: { y: -40, opacity: 0 },
   visible: { y: 0, opacity: 1, transition: { duration: 0.8 } },
 };
 
@@ -53,7 +53,7 @@ const slideVariants = {
 
 export const slideUp2: Variants = {
   ...slideVariants,
-  hidden: { ...slideVariants.hidden, y: 200 },
+  hidden: { ...slideVariants.hidden, y: 60 },
 };
 
 export const staggerUp: Variants = {
@@ -75,7 +75,7 @@ export const staggerUp2: Variants = {
 
 export const slideDown2: Variants = {
   ...slideVariants,
-  hidden: { ...slideVariants.hidden, y: -200 },
+  hidden: { ...slideVariants.hidden, y: -40 },
 };
 
 export const staggerDown: Variants = {

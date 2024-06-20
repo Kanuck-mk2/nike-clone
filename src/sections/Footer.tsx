@@ -2,7 +2,7 @@ import { copyrightSign } from '../assets/icons';
 import { footerLogo } from '../assets/images';
 import { footerLinks, socialMedia } from '../constants';
 import { motion } from 'framer-motion';
-import {  slideUp2 } from '../constants/animations';
+import { slideUp2 } from '../constants/animations';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
               <ul>
                 {section.links.map((link) => (
                   <li
-                    className="mt-3 text-white-400 font-montserrat text-base leading-normal hover:text-slate-gray cursor-pointer"
+                    className="mt-3 text-white-400 font-montserrat text-base leading-normal hover:text-coral-red duration-200 cursor-pointer"
                     key={link.name}
                   >
                     <a>{link.name}</a>
