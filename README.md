@@ -1,3 +1,6 @@
+Credit to Javascript Mastery on YT for this project that I remixed with some framer motion. Adrian Hajdin, thank you among many others in the web development community.
+
+
 <<<<<<< HEAD
 # React + TypeScript + Vite
 
